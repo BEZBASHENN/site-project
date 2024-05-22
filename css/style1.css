@@ -1,0 +1,850 @@
+@font-face {
+  font-family: Inter;
+  src: url(/fonts/Inter-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(/fonts/Montserrat-Bold.woff2) format(woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat_Reg;
+  src: url(/fonts/Montserrat-Regular.woff2) format(woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(/fonts/PlayfairDisplay-Regular.woff2) format(woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  background-color: #202D45;
+}
+
+@media (max-width: 420px) {
+  header .menu {
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 200%;
+    z-index: 1000;
+    background-color: #FFF;
+  }
+  header .menu .svg_menu {
+    margin-top: 100vh;
+    margin-left: 10%;
+  }
+  header .menu .svg_menu svg {
+    width: 30vw;
+    height: 10vw;
+  }
+  header .menu .cont_m {
+    margin-left: 10%;
+    margin-top: 10%;
+    display: block;
+    color: #313131;
+    font-family: Inter;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header .menu .cont_m div {
+    margin-top: 20%;
+  }
+  header .menu .cont_m div a {
+    color: #313131;
+  }
+  header .menu .cont_m div a:hover {
+    color: #313131;
+  }
+  header .menu .cont_m div a:active {
+    color: #313131;
+  }
+  header .menu .tel {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 20%;
+    grid-gap: 5%;
+  }
+  header .menu .tel div {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Montserrat_Reg;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  header .menu .tel div svg {
+    width: 5vw;
+    height: 5vw;
+  }
+  header .menu .close {
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 20%;
+    color: #313131;
+    font-family: Inter;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  @keyframes menu_anim {
+    0% {
+      right: 50%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes menu_anim_reverse {
+    0% {
+      right: 100%;
+    }
+    100% {
+      right: 50%;
+    }
+  }
+  header #nav-toggle:checked ~ .menu {
+    animation: menu_anim 0.5s ease-in-out forwards;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  header #nav-toggle ~ .menu {
+    animation: menu_anim_reverse 0.5s ease-in-out forwards;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  header .group1_1 {
+    margin-left: 5%;
+    width: auto;
+    margin-top: 3%;
+  }
+  header .group1_1 svg {
+    width: 30vw;
+    height: 10vw;
+  }
+  header .group1_2 {
+    display: none;
+  }
+  header .group1_3 {
+    display: none;
+  }
+  header .group1_4 {
+    display: flex;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 45%;
+    grid-gap: 0;
+    width: 80%;
+    font-size: 3vw;
+  }
+  header .group1_4 div:nth-child(1) svg {
+    width: 20vw;
+    height: 10vw;
+  }
+  footer {
+    margin-bottom: 10%;
+  }
+  footer .menu {
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 200%;
+    z-index: 1000;
+    background-color: #FFF;
+  }
+  footer .menu .svg_menu {
+    margin-top: 100vh;
+    margin-left: 10%;
+  }
+  footer .menu .svg_menu svg {
+    width: 30vw;
+    height: 10vw;
+  }
+  footer .menu .cont_m {
+    margin-left: 10%;
+    margin-top: 10%;
+    display: block;
+    color: #313131;
+    font-family: Inter;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  footer .menu .cont_m div {
+    margin-top: 20%;
+  }
+  footer .menu .cont_m div a {
+    color: #313131;
+  }
+  footer .menu .cont_m div a:hover {
+    color: #313131;
+  }
+  footer .menu .cont_m div a:active {
+    color: #313131;
+  }
+  footer .menu .tel {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 20%;
+    grid-gap: 5%;
+  }
+  footer .menu .tel div {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Montserrat_Reg;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  footer .menu .tel div svg {
+    width: 5vw;
+    height: 5vw;
+  }
+  footer .menu .close {
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 20%;
+    color: #313131;
+    font-family: Inter;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  @keyframes menu_anim {
+    0% {
+      right: 50%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes menu_anim_reverse {
+    0% {
+      right: 100%;
+    }
+    100% {
+      right: 50%;
+    }
+  }
+  footer #nav-toggle:checked ~ .menu {
+    animation: menu_anim 0.5s ease-in-out forwards;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  footer #nav-toggle ~ .menu {
+    animation: menu_anim_reverse 0.5s ease-in-out forwards;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  footer .group1_1 {
+    margin-left: 5%;
+    width: auto;
+    margin-top: 3%;
+  }
+  footer .group1_1 svg {
+    width: 30vw;
+    height: 10vw;
+  }
+  footer .group1_2 {
+    display: none;
+  }
+  footer .group1_3 {
+    display: none;
+  }
+  footer .group1_4 {
+    display: flex;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 45%;
+    grid-gap: 0;
+    width: 80%;
+    font-size: 3vw;
+  }
+  footer .group1_4 div:nth-child(1) svg {
+    width: 20vw;
+    height: 10vw;
+  }
+  body .head1 {
+    font-size: 9vw;
+    margin-bottom: 5%;
+  }
+  .documents {
+    margin-left: 5%;
+  }
+  .documents .ipad, .documents .pc {
+    display: none;
+  }
+  .documents .mobile {
+    display: block;
+    align-items: center;
+  }
+  .documents .mobile div .cell {
+    margin-bottom: 5%;
+    width: 85%;
+    height: 100%;
+    border-radius: 5%;
+    background: linear-gradient(250deg, rgba(255, 255, 255, 0.1) 0%, rgba(217, 217, 217, 0) 100%, rgba(255, 255, 255, 0.1) 100%);
+  }
+  .documents .mobile div .cell .name_1 {
+    padding-top: 5%;
+    margin-left: 5%;
+    color: #EDF0F4;
+    font-family: Montserrat_reg;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .documents .mobile div .cell .date {
+    margin-left: 5%;
+    margin-top: 3%;
+    color: #BCC1C9;
+    font-family: Inter;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+  }
+  .documents .mobile div .cell .download {
+    padding-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+  }
+  .documents .mobile div .cell .download .svg1 {
+    cursor: pointer;
+  }
+  .documents .mobile div .cell .download .svg1 svg {
+    width: 8vw;
+    height: 8vw;
+  }
+  .documents .mobile div .cell .download .d_name {
+    cursor: pointer;
+    margin-left: 3%;
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Montserrat_reg;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .documents .mobile .row2 {
+    margin-top: 5%;
+  }
+}
+@media ((min-width: 421px) and (max-width: 1000px)) {
+  body .head1 {
+    font-size: 7vw;
+    margin-bottom: 5%;
+  }
+  header .menu {
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 200%;
+    z-index: 1000;
+    background-color: #FFF;
+  }
+  header .menu .svg_menu {
+    margin-top: 100vh;
+    margin-left: 10%;
+  }
+  header .menu .svg_menu svg {
+    width: 25vw;
+    height: 10vw;
+  }
+  header .menu .cont_m {
+    margin-left: 10%;
+    margin-top: 5%;
+    display: block;
+    color: #313131;
+    font-family: Inter;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header .menu .cont_m div {
+    margin-top: 15%;
+  }
+  header .menu .cont_m div a {
+    color: #313131;
+  }
+  header .menu .cont_m div a:hover {
+    color: #313131;
+  }
+  header .menu .cont_m div a:active {
+    color: #313131;
+  }
+  header .menu .tel {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 20%;
+    grid-gap: 5%;
+  }
+  header .menu .tel div {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Montserrat_Reg;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  header .menu .tel div svg {
+    width: 4vw;
+    height: 4vw;
+  }
+  header .menu .close {
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 15%;
+    color: #313131;
+    font-family: Inter;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  @keyframes menu_anim {
+    0% {
+      right: 50%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes menu_anim_reverse {
+    0% {
+      right: 100%;
+    }
+    100% {
+      right: 50%;
+    }
+  }
+  header #nav-toggle:checked ~ .menu {
+    animation: menu_anim 0.5s ease-in-out forwards;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  header #nav-toggle ~ .menu {
+    animation: menu_anim_reverse 0.5s ease-in-out forwards;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  header .group1_1 {
+    margin-left: 5%;
+    width: auto;
+    margin-top: 3%;
+  }
+  header .group1_1 svg {
+    width: 15vw;
+    height: 7vw;
+  }
+  header .group1_2 {
+    display: none;
+  }
+  header .group1_3 {
+    display: none;
+  }
+  header .group1_4 {
+    display: flex;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 68%;
+    grid-gap: 0;
+    width: 80%;
+    font-size: 3vw;
+  }
+  header .group1_4 div:nth-child(1) svg {
+    width: 10vw;
+    height: 5vw;
+  }
+  footer {
+    margin-bottom: 3%;
+  }
+  footer .menu {
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 200%;
+    z-index: 1000;
+    background-color: #FFF;
+  }
+  footer .menu .svg_menu {
+    margin-top: 100vh;
+    margin-left: 10%;
+  }
+  footer .menu .svg_menu svg {
+    width: 30vw;
+    height: 10vw;
+  }
+  footer .menu .cont_m {
+    margin-left: 10%;
+    margin-top: 10%;
+    display: block;
+    color: #313131;
+    font-family: Inter;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  footer .menu .cont_m div {
+    margin-top: 20%;
+  }
+  footer .menu .cont_m div a {
+    color: #313131;
+  }
+  footer .menu .cont_m div a:hover {
+    color: #313131;
+  }
+  footer .menu .cont_m div a:active {
+    color: #313131;
+  }
+  footer .menu .tel {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 20%;
+    grid-gap: 5%;
+  }
+  footer .menu .tel div {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Montserrat_Reg;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  footer .menu .tel div svg {
+    width: 5vw;
+    height: 5vw;
+  }
+  footer .menu .close {
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 20%;
+    color: #313131;
+    font-family: Inter;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  @keyframes menu_anim {
+    0% {
+      right: 50%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes menu_anim_reverse {
+    0% {
+      right: 100%;
+    }
+    100% {
+      right: 50%;
+    }
+  }
+  footer #nav-toggle:checked ~ .menu {
+    animation: menu_anim 0.5s ease-in-out forwards;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  footer #nav-toggle ~ .menu {
+    animation: menu_anim_reverse 0.5s ease-in-out forwards;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  footer .group1_1 {
+    margin-left: 5%;
+    width: auto;
+    margin-top: 3%;
+  }
+  footer .group1_1 svg {
+    width: 15vw;
+    height: 7vw;
+  }
+  footer .group1_2 {
+    display: none;
+  }
+  footer .group1_3 {
+    display: none;
+  }
+  footer .group1_4 {
+    display: flex;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 68%;
+    grid-gap: 0;
+    width: 80%;
+    font-size: 3vw;
+  }
+  footer .group1_4 div:nth-child(1) svg {
+    width: 10vw;
+    height: 5vw;
+  }
+  .documents {
+    margin-left: 5%;
+  }
+  .documents .mobile, .documents .pc {
+    display: none;
+  }
+  .documents .ipad {
+    display: block;
+  }
+  .documents .ipad .row1 {
+    grid-gap: 5%;
+    display: flex;
+    align-items: center;
+  }
+  .documents .ipad .row1 .cell {
+    width: 45%;
+    height: 30%;
+    border-radius: 5%;
+    background: linear-gradient(250deg, rgba(255, 255, 255, 0.1) 0%, rgba(217, 217, 217, 0) 100%, rgba(255, 255, 255, 0.1) 100%);
+  }
+  .documents .ipad .row1 .cell .name_1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #EDF0F4;
+    font-family: Montserrat_reg;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .documents .ipad .row1 .cell .date {
+    margin-left: 5%;
+    margin-top: 3%;
+    color: #BCC1C9;
+    font-family: Inter;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+  }
+  .documents .ipad .row1 .cell .download {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+  }
+  .documents .ipad .row1 .cell .download .svg1 {
+    cursor: pointer;
+  }
+  .documents .ipad .row1 .cell .download .svg1 svg {
+    width: 4vw;
+    height: 4vw;
+  }
+  .documents .ipad .row1 .cell .download .d_name {
+    cursor: pointer;
+    margin-left: 3%;
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Montserrat_reg;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .documents .ipad .row2 {
+    margin-top: 5%;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header .div:nth-child(3) {
+  display: none;
+}
+
+.group1_1x {
+  display: none;
+}
+
+.group1_1 {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.group1_1 svg {
+  width: 12vw;
+  height: 7vw;
+}
+
+.group1_2 {
+  display: flex;
+  align-items: center;
+  grid-gap: 5%;
+  width: 47%;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.group1_2 a {
+  color: #FFF;
+}
+.group1_2 a:hover {
+  color: #FFF;
+}
+.group1_2 a:active {
+  color: #FFF;
+}
+
+.group1_3 {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  grid-gap: 5%;
+  width: 20%;
+  color: #FFF;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat_Reg;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.group1_3 .svge svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.svge svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.group1_4 {
+  display: none;
+}
+
+footer {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.head1 {
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  color: #EDF0F4;
+  font-family: Montserrat;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mobile {
+  display: none;
+}
+
+.ipad {
+  display: none;
+}
+
+.documents {
+  margin-left: 5%;
+}
+.documents .pc .row1, .documents .pc .row2 {
+  grid-gap: 5%;
+  display: flex;
+  align-items: center;
+}
+.documents .pc .row1 .cell, .documents .pc .row2 .cell {
+  width: 25%;
+  height: 15%;
+  border-radius: 5%;
+  background: linear-gradient(250deg, rgba(255, 255, 255, 0.1) 0%, rgba(217, 217, 217, 0) 100%, rgba(255, 255, 255, 0.1) 100%);
+}
+.documents .pc .row1 .cell .name_1, .documents .pc .row2 .cell .name_1 {
+  margin-top: 5%;
+  margin-left: 5%;
+  color: #EDF0F4;
+  font-family: Montserrat_reg;
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.documents .pc .row1 .cell .date, .documents .pc .row2 .cell .date {
+  margin-left: 5%;
+  margin-top: 3%;
+  color: #BCC1C9;
+  font-family: Inter;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+.documents .pc .row1 .cell .download, .documents .pc .row2 .cell .download {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+.documents .pc .row1 .cell .download .svg1, .documents .pc .row2 .cell .download .svg1 {
+  cursor: pointer;
+}
+.documents .pc .row1 .cell .download .svg1 svg, .documents .pc .row2 .cell .download .svg1 svg {
+  width: 3vw;
+  height: 3vw;
+}
+.documents .pc .row1 .cell .download .d_name, .documents .pc .row2 .cell .download .d_name {
+  cursor: pointer;
+  margin-left: 3%;
+  color: #FFF;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat_reg;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.documents .pc .row2 {
+  margin-top: 5%;
+}/*# sourceMappingURL=style1.css.map */

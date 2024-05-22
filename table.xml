@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rowss>
+<row>
+    <image>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/001.jpg);background-size: cover;width: 50vw;height: 30vw;</image>
+    <imagee>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/001.jpg);background-size: cover;width: 50vw;height: 60vw;</imagee>
+    <imageee>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/001.jpg);background-size: cover;width: 100%;height: 80vw;</imageee>
+    <num>01</num>
+    <name>Библиотека</name>
+    <disc>Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение</disc>
+</row>
+<row>
+    <image>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/002.jpg);background-size: cover;width: 50vw;height: 30vw;</image>
+    <imagee>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/002.jpg);background-size: cover;width: 50vw;height: 60vw;</imagee>
+    <imageee>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/002.jpg);background-size: cover;width: 100%;height: 80vw;</imageee>
+    <num>02</num>
+    <name>Парковка</name>
+    <disc>Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение</disc>
+</row>
+<row>
+    <image>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/003.jpg);background-size: cover;width: 50vw;height: 30vw;</image>
+    <imagee>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/003.jpg);background-size: cover;width: 50vw;height: 60vw;</imagee>
+    <imageee>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/003.jpg);background-size: cover;width: 100%;height: 80vw;</imageee>
+    <num>03</num>
+    <name>Бассейн</name>
+    <disc>Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение</disc>
+</row>
+<row>
+    <image>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/004.jpg);background-size: cover;width: 50vw;height: 30vw;</image>
+    <imagee>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/004.jpg);background-size: cover;width: 50vw;height: 60vw;</imagee>
+    <imageee>background-image: linear-gradient(0deg, rgba(32, 45, 69, 1) 0%, rgba(32, 45, 69, 0.50) 100%), url(/images/004.jpg);background-size: cover;width: 100%;height: 80vw;</imageee>
+    <num>04</num>
+    <name>Фитнес</name>
+    <disc>Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение</disc>
+</row>
+</rowss>
